@@ -6,7 +6,7 @@ import Tab from '@material-ui/core/Tab';
 import 'ag-grid-community/dist/styles/ag-grid.css';
 import 'ag-grid-community/dist/styles/ag-theme-material.css';
 import Customers from './components/Customers';
-import Trainings from './components/Trainings'
+import Trainings from './components/Trainings';
 
 const App = () => {
    
@@ -33,7 +33,7 @@ const App = () => {
 
       {value === 'one' && <Customers />}
       {value === 'two' && <Trainings />}
-      {value === 'three' && <h1>Kalenteri tulossa</h1>}
+      {value === 'three' && <h1>En tee tätä :)</h1>}
     </div>
   );
 }
