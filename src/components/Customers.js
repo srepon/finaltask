@@ -53,12 +53,12 @@ function Customers() {
             headers: {
                 'Content-type' : 'application/json'
             },
-            body: {
-             "date": moment(training.date).toISOString(),
-             "activity": JSON.stringify(training.activity),
-             "duration": JSON.stringify(training.duration),
-             "customer": JSON.stringify(training.customer)
-            }
+            body: JSON.stringify({
+                "date": moment(training.date).toISOString(),
+                "activity": training.activity,
+                "duration": training.duration,
+                "customer": training.customer
+            })
         })
         .then(response => getCustomers())
         .catch(err => console.error(err))
