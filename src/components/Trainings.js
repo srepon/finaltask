@@ -45,21 +45,21 @@ function Trainings() {
     }   
 
     const columns = [
-        {field: 'date', sortable: true, filter: true, 
+        {
+            headerName: '',  
+            field: 'id',  
+            width: 90,  
+            cellRendererFramework: params => 
+            <IconButton color="secondary" onClick={() => deleteTraining(params)}>
+                <DeleteIcon fontSize="small" />
+          </IconButton>  
+          },
+          {field: 'date', sortable: true, filter: true, 
         valueFormatter: (params) => moment(params.value).format('MMM Do YYYY, h:mm a')},
         {field: 'duration', width: 120, sortable: true, filter: true},
         {field: 'activity', sortable: true, filter: true},
         {field: 'customer.firstname', sortable: true, filter: true},
-        {field: 'customer.lastname', sortable: true, filter: true},
-        {
-          headerName: '',  
-          field: 'id',  
-          width: 90,  
-          cellRendererFramework: params => 
-          <IconButton color="secondary" onClick={() => deleteTraining(params)}>
-              <DeleteIcon fontSize="small" />
-        </IconButton>  
-        }
+        {field: 'customer.lastname', sortable: true, filter: true}        
     ]
 
     return(
@@ -78,7 +78,7 @@ function Trainings() {
                open={open}
                onClose={handleClose}
                autoHideDuration={2500}
-               message="Trainings deleted successfully" 
+               message="Training deleted successfully" 
             />
         </div>
     )

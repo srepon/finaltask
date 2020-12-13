@@ -7,7 +7,7 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogTitle from '@material-ui/core/DialogTitle';
 
 function AddTraining(props) {
-    const [training, setTraining] = React.useState({ 
+    const [training, setTraining] = useState({ 
         date: '', 
         duration: '', 
         activity: '', 

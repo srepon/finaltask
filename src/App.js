@@ -33,7 +33,7 @@ const App = () => {
 
       {value === 'one' && <Customers />}
       {value === 'two' && <Trainings />}
-      {value === 'three' && <h1>En tee tätä :)</h1>}
+      {value === 'three' && <h2>En tee tätä :)</h2>}
     </div>
   );
 }
