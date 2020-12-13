@@ -9,7 +9,7 @@ import EditIcon from '@material-ui/icons/Edit';
 import IconButton from '@material-ui/core/IconButton';
 
 function EditCustomer(props) {
-    const [customer, setCustomer] = React.useState({ 
+    const [customer, setCustomer] = useState({ 
         firstname: '', 
         lastname: '', 
         streetaddress: '', 
@@ -19,7 +19,7 @@ function EditCustomer(props) {
         phone: ''
     })
     
-    const [open, setOpen] = React.useState(false);
+    const [open, setOpen] = useState(false);
 
     const handleClickOpen = () => {
         setCustomer({
