@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { seState } from 'react';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import Dialog from '@material-ui/core/Dialog';
@@ -14,7 +14,7 @@ function AddTraining(props) {
         customer: ''
         })
     
-    const [open, setOpen] = React.useState(false);
+    const [open, setOpen] = useState(false);
 
     const handleClickOpen = () => {
       setOpen(true);

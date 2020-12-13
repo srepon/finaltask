@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import Dialog from '@material-ui/core/Dialog';
@@ -7,7 +7,7 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogTitle from '@material-ui/core/DialogTitle';
 
 function AddCustomer(props) {
-    const [customer, setCustomer] = React.useState({ 
+    const [customer, setCustomer] = useState({ 
         firstname: '', 
         lastname: '', 
         streetaddress: '', 
